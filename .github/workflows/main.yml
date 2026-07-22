@@ -28,7 +28,7 @@ jobs:
 
       - name: Build IPA
         run: |
-          flet build ipa --no-codesign
+          flet build ipa
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
