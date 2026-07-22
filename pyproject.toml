@@ -1,11 +1,17 @@
-Ini, TOML
+[project]
+name = "eterus"
+version = "0.1.0"
+description = "Eterus Voltage Drop Calculator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flet>=0.21.0",
+]
+
 [tool.flet]
-app_name = "eterus_config"
-product_name = "Конфигуратор ЭТЕРУС"
-org = "com.eterus"
+# Путь к главному файлу приложения
+main = "main.py"
 
-[tool.flet.assets]
-assets_dir = "assets"
-
-[tool.flet.ios]
-icon = "assets/icon.png"
+[tool.flet.app]
+# Имя приложения, отображаемое на экране смартфона
+name = "ЭТЕРУС"
