@@ -1,11 +1,1 @@
-Ini, TOML
-[tool.flet]
-app_name = "eterus_config"
-product_name = "Конфигуратор ЭТЕРУС"
-org = "com.eterus"
 
-[tool.flet.assets]
-assets_dir = "assets"
-
-[tool.flet.ios]
-icon = "assets/icon.png"
