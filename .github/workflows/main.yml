@@ -26,12 +26,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install flet
 
-      - name: Build IPA
+      - name: Build iOS
         run: |
           flet build ipa
 
-      - name: Upload IPA Artifact
+      - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: EterusConfig-iOS
-          path: build/ipa/*.ipa
+          name: EterusConfig-iOS-Build
+          path: build/
